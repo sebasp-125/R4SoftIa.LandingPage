@@ -8,8 +8,6 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   imports: [CommonModule],
   template: `
     <section id="inicio" class="relative w-full h-screen min-h-[640px] flex items-center overflow-hidden bg-slate-950">
-      
-      <!-- Video Element Background vía YouTube Streaming Embed (Cero peso local, streaming ágil y fluido) -->
       <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         <iframe 
           [src]="safeVideoUrl"
@@ -21,16 +19,12 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
           aria-hidden="true"
         ></iframe>
         
-        <!-- Overlay cinematográfico sutil: permite ver el video en su esplendor con contraste para el texto -->
         <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent pointer-events-none"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none"></div>
       </div>
 
-      <!-- Main Content (Alineado al estilo All Roads Medellín: compacto, sin tarjetas gigantes que tapen el video) -->
       <div class="container mx-auto max-w-6xl px-6 sm:px-10 relative z-20 flex flex-col justify-center">
         <div class="max-w-2xl text-left">
-          
-          <!-- Titular Principal con Alto Impacto y Sombra Cinematográfica -->
           <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.08] mb-4 drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)]">
             DESARROLLO DE SOFTWARE <br />
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-cyan-300">
@@ -38,12 +32,10 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
             </span>
           </h1>
 
-          <!-- Subtítulo Breve y Directo (Sin saturar la pantalla) -->
           <p class="text-base sm:text-xl text-white/90 leading-relaxed font-normal mb-8 max-w-xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] text-pretty">
             Creamos plataformas web, portales bancarios y aplicaciones móviles diseñadas 100% para los procesos de tu negocio.
           </p>
 
-          <!-- Botones de Acción Inmediata -->
           <div class="flex flex-wrap items-center gap-4">
             <button 
               type="button" 
@@ -70,13 +62,11 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
         </div>
       </div>
 
-      <!-- Hero Scroll Guide Pill (Idéntico a la esquina inferior derecha de All Roads Medellín) -->
       <div class="absolute bottom-8 right-6 sm:right-12 z-20">
         <a 
           href="#nosotros" 
           class="flex items-center gap-3.5 px-5 py-2.5 rounded-2xl bg-black/40 hover:bg-black/60 border border-white/20 backdrop-blur-md shadow-2xl transition-all group cursor-pointer"
         >
-          <!-- Mascot Icon -->
           <div class="relative w-11 h-11 rounded-full bg-gradient-to-tr from-blue-500 to-sky-400 p-[2px] shadow-lg shadow-blue-500/40">
             <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center text-lg animate-peek">
               💡
@@ -102,7 +92,6 @@ export class HeroComponent {
 
   private readonly sanitizer = inject(DomSanitizer);
 
-  // Embed de YouTube sin peso local, con autoplay, mute, loop y sin controles interactivos
   protected readonly safeVideoUrl: SafeResourceUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
     'https://www.youtube.com/embed/3tzclPPKnFY?autoplay=1&mute=1&loop=1&playlist=3tzclPPKnFY&controls=0&showinfo=0&rel=0&iv_load_policy=3&disablekb=1&modestbranding=1&playsinline=1&enablejsapi=1'
   );

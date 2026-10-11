@@ -7,11 +7,9 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <section class="relative z-30 py-24 px-4 bg-gradient-to-b from-white via-blue-50/60 to-white border-t border-slate-200 overflow-hidden">
-      <!-- Ambient light effect -->
       <div class="absolute inset-0 bg-light-dots opacity-50 pointer-events-none"></div>
 
       <div class="container mx-auto max-w-5xl relative z-10 text-center">
-        <!-- Badge -->
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-mono mb-6 shadow-sm">
           <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
           <span class="font-bold">ASESORÍA INICIAL SIN COMPROMISO</span>
@@ -29,7 +27,6 @@ import { CommonModule } from '@angular/common';
           una propuesta técnica y económica adaptada a las metas reales y presupuesto de tu organización.
         </p>
 
-        <!-- CTA Buttons -->
         <div class="flex flex-wrap items-center justify-center gap-4">
           <button 
             type="button" 

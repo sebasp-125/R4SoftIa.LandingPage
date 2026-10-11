@@ -19,7 +19,6 @@
   }
 }
 
-/* Light background patterns inspired by All Roads & 101 Software */
 .bg-light-dots {
   background-image: radial-gradient(rgba(15, 23, 42, 0.08) 1.2px, transparent 1.2px);
   background-size: 20px 20px;
@@ -31,7 +30,6 @@
   background-size: 32px 32px;
 }
 
-/* High end light glassmorphism */
 .glass-pill-light {
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(16px);
@@ -53,7 +51,6 @@
   box-shadow: 0 25px 45px -10px rgba(37, 99, 235, 0.15);
 }
 
-/* Stacking / Sticky Card Sheet (The All Roads scroll effect) */
 .stacking-section {
   position: relative;
   border-top-left-radius: 3.5rem;
@@ -67,7 +64,6 @@
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
-/* Float and pulse animations */
 @keyframes float-subtle {
   0%, 100% {
     transform: translateY(0px);
@@ -94,7 +90,6 @@
   animation: emerge-peek 5s ease-in-out infinite;
 }
 
-/* Clean light scrollbar */
 ::-webkit-scrollbar {
   width: 9px;
 }

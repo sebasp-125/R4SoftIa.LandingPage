@@ -8,19 +8,16 @@ import { CommonModule } from '@angular/common';
   template: `
     <section id="nosotros" class="relative z-30 pt-24 pb-32 px-4 bg-slate-50 border-t-2 border-slate-200/90 rounded-t-[3.5rem] lg:rounded-t-[4.5rem] shadow-[0_-25px_60px_rgba(15,23,42,0.08)] bg-light-dots overflow-hidden">
       
-      <!-- Top Ambient line -->
       <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-96 h-20 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
 
       <div class="container mx-auto max-w-6xl relative z-10">
         
-        <!-- Section Tag -->
         <div class="flex items-center justify-center gap-2 mb-4">
           <span class="w-8 h-[2px] bg-blue-600"></span>
-          <span class="text-xs font-mono uppercase tracking-widest text-blue-700 font-bold">[ // 01. QUIÉNES SOMOS &amp; NUESTRA ESENCIA ]</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-blue-700 font-bold">QUIÉNES SOMOS &amp; NUESTRA ESENCIA</span>
           <span class="w-8 h-[2px] bg-blue-600"></span>
         </div>
 
-        <!-- Section Title & Subheading -->
         <div class="text-center max-w-3xl mx-auto mb-16">
           <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
             Sobre Nosotros y Nuestra <br />
@@ -35,12 +32,10 @@ import { CommonModule } from '@angular/common';
           </p>
         </div>
 
-        <!-- The Peeking Mascot & Emergent Card (All Roads Image 2 Signature Effect) -->
         <div class="relative bg-white border border-slate-200/90 rounded-3xl p-8 sm:p-12 shadow-xl shadow-slate-200/50 mb-20 overflow-hidden">
           
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
-            <!-- Left Narrative Column -->
             <div class="lg:col-span-7 flex flex-col justify-center space-y-5">
               <span class="px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200 text-xs font-mono font-bold w-fit">
                 SOFTWARE CON PROPÓSITO REAL
@@ -61,7 +56,6 @@ import { CommonModule } from '@angular/common';
                 acompañamos a tu empresa desde el primer borrador hasta el soporte y la posventa continua.
               </p>
 
-              <!-- Principles Checklist -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
                   <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center shrink-0 text-xs font-bold">✓</span>
@@ -81,10 +75,8 @@ import { CommonModule } from '@angular/common';
               </div>
             </div>
 
-            <!-- Right Interactive Graphic & Emergent Character (All Roads Image 2 style) -->
             <div class="lg:col-span-5 flex flex-col items-center justify-center relative min-h-[320px]">
               
-              <!-- Clean Dashboard Mockup -->
               <div class="w-full max-w-sm rounded-2xl bg-slate-900 text-white p-6 shadow-2xl relative z-10 border border-slate-800">
                 <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-800">
                   <div class="flex items-center gap-2">
@@ -92,7 +84,7 @@ import { CommonModule } from '@angular/common';
                     <span class="w-3 h-3 rounded-full bg-amber-500"></span>
                     <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
                   </div>
-                  <span class="text-[11px] font-mono text-cyan-400">PORTAL EMPRESARIAL // v2.6</span>
+                  <span class="text-[11px] font-mono text-cyan-400">PORTAL EMPRESARIAL &bull; v2.6</span>
                 </div>
 
                 <div class="space-y-2.5 font-mono text-xs">
@@ -111,14 +103,12 @@ import { CommonModule } from '@angular/common';
                 </div>
               </div>
 
-              <!-- Emergent Mascot Figure peeking from bottom (All Roads Image 2 Sun with glasses style) -->
               <div class="absolute -bottom-8 -right-4 sm:-right-6 z-20 flex flex-col items-center animate-peek">
                 <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-tr from-blue-600 via-indigo-500 to-sky-400 p-2 shadow-2xl flex items-center justify-center border-4 border-white transform hover:scale-105 transition-transform">
                   <div class="relative w-full h-full flex items-center justify-center">
                     <span class="text-4xl sm:text-5xl">👨‍💻</span>
                   </div>
                 </div>
-                <!-- Speech Bubble -->
                 <div class="mt-1 px-3 py-1 rounded-xl bg-white border border-slate-200 shadow-md text-[10px] font-bold text-slate-800 whitespace-nowrap">
                   ¡Tu software, tal como lo imaginaste!
                 </div>
@@ -129,7 +119,6 @@ import { CommonModule } from '@angular/common';
           </div>
         </div>
 
-        <!-- 4 Strategic Pillars of Custom Software -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           @for (pillar of pillars; track pillar.number) {
             <div 

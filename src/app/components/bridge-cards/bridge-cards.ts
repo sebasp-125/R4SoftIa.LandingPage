@@ -8,18 +8,15 @@ import { CommonModule } from '@angular/common';
   template: `
     <section class="relative z-20 -mt-10 sm:-mt-16 px-4">
       <div class="container mx-auto max-w-6xl">
-        <!-- 3 Floating White Cards (Directamente inspirado en 1cero1.com Imagen 3) -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           @for (card of bridgeCards; track card.title) {
             <div 
               (click)="onSelect(card.targetId)"
               class="group relative bg-white hover:bg-slate-50/80 border border-slate-200/90 hover:border-blue-400 rounded-3xl p-7 sm:p-8 shadow-xl shadow-slate-200/70 hover:shadow-2xl hover:shadow-blue-500/15 transition-all duration-300 hover:-translate-y-2 cursor-pointer flex flex-col justify-between overflow-hidden"
             >
-              <!-- Ambient soft light gradient -->
               <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full blur-2xl group-hover:bg-blue-100/60 transition-all"></div>
 
               <div>
-                <!-- Clean Icon badge -->
                 <div class="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 group-hover:scale-105 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm mb-5">
                   @switch (card.icon) {
                     @case ('bank') {
@@ -53,7 +50,6 @@ import { CommonModule } from '@angular/common';
                 </p>
               </div>
 
-              <!-- Explore action -->
               <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-500 group-hover:text-blue-600 transition-colors">
                 <span>Ver Soluciones</span>
                 <span class="w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all">
@@ -64,7 +60,6 @@ import { CommonModule } from '@angular/common';
           }
         </div>
 
-        <!-- Corporate Trust Statement (Idéntico a 1cero1.com Imagen 3) -->
         <div class="mt-8 text-center px-6 py-5 rounded-3xl bg-white border border-slate-200/90 shadow-sm flex flex-wrap items-center justify-center gap-2 text-sm sm:text-base text-slate-600">
           <span>Hemos desarrollado soluciones tecnológicas integrales para más de 120 empresas y entidades públicas y privadas.</span>
           <button 

@@ -9,11 +9,10 @@ import { CommonModule } from '@angular/common';
     <section id="servicios" class="relative z-30 py-24 px-4 bg-white border-t border-slate-200">
       <div class="container mx-auto max-w-6xl">
         
-        <!-- Section Header -->
         <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
           <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-mono mb-4">
             <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-            <span class="font-bold">[ // 02. NUESTROS SERVICIOS &amp; SOLUCIONES ]</span>
+            <span class="font-bold">NUESTROS SERVICIOS &amp; SOLUCIONES</span>
           </div>
 
           <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
@@ -29,14 +28,12 @@ import { CommonModule } from '@angular/common';
           </p>
         </div>
 
-        <!-- Sticky Stacking Cards Container (Stick Flotante que aparece desde abajo al hacer scroll) -->
         <div class="relative space-y-12">
           @for (service of services; track service.id; let idx = $index) {
             <article 
               [style.top.rem]="6.5 + (idx * 0.75)"
               class="sticky rounded-3xl bg-white border border-slate-200/90 hover:border-blue-400 p-8 sm:p-12 shadow-2xl shadow-slate-300/60 transition-all duration-300 overflow-hidden"
             >
-              <!-- Card Top Header -->
               <div class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-100">
                 <div class="flex items-center gap-3">
                   <span class="w-8 h-8 rounded-xl bg-blue-600 text-white font-mono font-bold flex items-center justify-center text-xs shadow-md shadow-blue-500/20">
@@ -53,7 +50,6 @@ import { CommonModule } from '@angular/common';
 
               <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 
-                <!-- Left info column -->
                 <div class="lg:col-span-7 flex flex-col justify-between space-y-5">
                   <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
                     {{ service.title }}
@@ -63,7 +59,6 @@ import { CommonModule } from '@angular/common';
                     {{ service.description }}
                   </p>
 
-                  <!-- Feature list -->
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                     @for (feat of service.features; track feat) {
                       <div class="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
@@ -75,7 +70,6 @@ import { CommonModule } from '@angular/common';
                     }
                   </div>
 
-                  <!-- CTA -->
                   <div class="pt-4 flex flex-wrap items-center gap-4">
                     <button 
                       type="button" 
@@ -91,17 +85,15 @@ import { CommonModule } from '@angular/common';
                   </div>
                 </div>
 
-                <!-- Right visual preview mockup -->
                 <div class="lg:col-span-5 bg-slate-900 text-white rounded-2xl p-6 border border-slate-800 shadow-xl flex flex-col justify-between relative overflow-hidden">
                   <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-800">
                     <span class="text-xs font-mono text-blue-400 font-bold uppercase flex items-center gap-2">
                       <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
                       {{ service.schematicTitle }}
                     </span>
-                    <span class="text-[10px] font-mono text-slate-400">SISTEMA // DEMO</span>
+                    <span class="text-[10px] font-mono text-slate-400">SISTEMA &bull; DEMO</span>
                   </div>
 
-                  <!-- Capabilities list -->
                   <div class="space-y-2.5 font-mono text-xs">
                     @for (item of service.items; track item.name) {
                       <div class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-between">
@@ -113,7 +105,6 @@ import { CommonModule } from '@angular/common';
                     }
                   </div>
 
-                  <!-- Bottom card status -->
                   <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-[11px] font-mono text-slate-400">
                     <span>ENTREGA LLAVE EN MANO</span>
                     <span class="text-emerald-400 font-bold">100% FUNCIONAL</span>
@@ -144,7 +135,7 @@ export class ServicesStackComponent {
         'Control estricto de inventarios, bodegas y despachos',
         'Dashboards e indicadores gerenciales en tiempo real'
       ],
-      schematicTitle: 'MÓDULO ERP // GESTIÓN CENTRAL',
+      schematicTitle: 'MÓDULO ERP &bull; GESTIÓN CENTRAL',
       items: [
         { name: 'Ventas & Facturación Electrónica', tag: 'Automatizado' },
         { name: 'Control de Inventarios & Bodegas', tag: 'En Tiempo Real' },
@@ -163,7 +154,7 @@ export class ServicesStackComponent {
         'Portales institucionales para consulta de saldos y extractos',
         'Conexión segura con sistemas centrales (Core Bancario)'
       ],
-      schematicTitle: 'PORTAL TRANSACCIONAL // SEGURIDAD',
+      schematicTitle: 'PORTAL TRANSACCIONAL &bull; SEGURIDAD',
       items: [
         { name: 'Módulo de Recaudos y Multipagos', tag: 'Cifrado SSL' },
         { name: 'Autenticación Biométrica / 2FA', tag: 'Seguro' },
@@ -182,7 +173,7 @@ export class ServicesStackComponent {
         'Geolocalización, rutas y seguimiento de pedidos en vivo',
         'Notificaciones push personalizadas y modo sin conexión'
       ],
-      schematicTitle: 'APP MÓVIL // iOS & ANDROID',
+      schematicTitle: 'APP MÓVIL &bull; iOS & ANDROID',
       items: [
         { name: 'App para Clientes & Usuarios', tag: 'App Store / Play' },
         { name: 'App para Personal en Campo / Ventas', tag: 'Modo Offline' },
@@ -201,7 +192,7 @@ export class ServicesStackComponent {
         'Interconexión de sistemas antiguos con plataformas modernas',
         'Reducción drástica de errores humanos y tiempos de respuesta'
       ],
-      schematicTitle: 'MOTOR DE IA // AUTOMATIZACIÓN',
+      schematicTitle: 'MOTOR DE IA &bull; AUTOMATIZACIÓN',
       items: [
         { name: 'Extracción de Datos de Documentos', tag: 'OCR Inteligente' },
         { name: 'Chatbot de Atención al Cliente', tag: 'IA Generativa' },

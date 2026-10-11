@@ -13,7 +13,6 @@ import { FormsModule } from '@angular/forms';
           (click)="$event.stopPropagation()"
           class="relative w-full max-w-xl bg-white border border-slate-200/90 rounded-3xl p-8 sm:p-10 shadow-2xl shadow-slate-900/20 text-slate-900 overflow-hidden max-h-[90vh] overflow-y-auto"
         >
-          <!-- Close button -->
           <button 
             type="button" 
             (click)="onClose()"
@@ -24,7 +23,6 @@ import { FormsModule } from '@angular/forms';
           </button>
 
           @if (!submitted()) {
-            <!-- Header -->
             <div class="mb-6">
               <span class="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-mono uppercase tracking-wider font-bold mb-2">
                 COTIZACIÓN SIN COMPROMISO
@@ -37,7 +35,6 @@ import { FormsModule } from '@angular/forms';
               </p>
             </div>
 
-            <!-- Form -->
             <form (ngSubmit)="onSubmit()" class="space-y-4">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
@@ -132,7 +129,6 @@ import { FormsModule } from '@angular/forms';
               </p>
             </form>
           } @else {
-            <!-- Success confirmation state -->
             <div class="py-10 text-center space-y-4">
               <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-3xl mx-auto shadow-sm">
                 ✓

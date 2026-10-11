@@ -29,8 +29,6 @@ import { ContactModalComponent } from './components/contact-modal/contact-modal'
 export class App {
   protected readonly isModalOpen = signal(false);
 
-  // Puedes colocar aquí tu número de WhatsApp para actualizar todos los accesos directos
-  // Formato internacional sin símbolos: 'https://wa.me/573001234567'
   protected readonly whatsappUrl = signal('https://wa.me/NUMERO_WHATSAPP');
   protected readonly displayPhone = signal('+57 (604) 448 0000');
 

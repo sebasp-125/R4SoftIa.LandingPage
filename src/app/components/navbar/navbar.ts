@@ -12,7 +12,6 @@ import { CommonModule } from '@angular/common';
         [class.border-blue-200]="isScrolled()"
         class="w-full max-w-6xl mx-auto px-5 py-3 rounded-full bg-white/95 border border-slate-200/90 backdrop-blur-xl flex items-center justify-between shadow-md shadow-slate-200/50 transition-all duration-300 hover:border-blue-400"
       >
-        <!-- Logo Corporativo -->
         <a href="#" class="flex items-center gap-3 group">
           <div class="relative w-9 h-9 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 p-[1.5px] shadow-md shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-shadow">
             <div class="w-full h-full bg-white rounded-[10px] flex items-center justify-center text-blue-600">
@@ -32,7 +31,6 @@ import { CommonModule } from '@angular/common';
           </div>
         </a>
 
-        <!-- Desktop Navigation Links -->
         <div class="hidden md:flex items-center gap-1 lg:gap-2">
           @for (item of navLinks; track item.label) {
             <a 
@@ -44,7 +42,6 @@ import { CommonModule } from '@angular/common';
           }
         </div>
 
-        <!-- CTA & Actions -->
         <div class="flex items-center gap-3">
           <button 
             type="button" 
@@ -57,9 +54,8 @@ import { CommonModule } from '@angular/common';
             </svg>
           </button>
 
-          <!-- Mobile Hamburger Toggle -->
           <button 
-            type="button"
+            type="button" 
             (click)="toggleMobileMenu()"
             class="md:hidden p-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-slate-100"
             aria-label="Abrir menú de navegación"
@@ -75,7 +71,6 @@ import { CommonModule } from '@angular/common';
         </div>
       </nav>
 
-      <!-- Mobile Dropdown Menu -->
       @if (mobileMenuOpen()) {
         <div class="md:hidden fixed top-20 inset-x-4 bg-white border border-slate-200 rounded-2xl p-5 shadow-2xl backdrop-blur-2xl flex flex-col gap-3 z-50">
           @for (item of navLinks; track item.label) {
@@ -89,7 +84,7 @@ import { CommonModule } from '@angular/common';
           }
           <div class="pt-3 border-t border-slate-100">
             <button 
-              type="button"
+              type="button" 
               (click)="onOpenModal(); closeMobileMenu()"
               class="w-full py-2.5 rounded-xl text-center text-xs font-bold uppercase tracking-wider bg-blue-600 text-white shadow-md cursor-pointer"
             >

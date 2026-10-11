@@ -10,10 +10,8 @@ import { CommonModule } from '@angular/common';
       
       <div class="container mx-auto max-w-5xl relative z-10">
         
-        <!-- Contact Card -->
         <div class="bg-white border border-slate-200/90 rounded-3xl p-8 sm:p-10 mb-8 shadow-xl shadow-slate-200/60">
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 pb-6 border-b border-slate-100">
-            <!-- Brand -->
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 via-indigo-600 to-sky-500 p-[1.5px] shadow-md shadow-blue-500/20">
                 <div class="w-full h-full bg-white rounded-[10px] flex items-center justify-center text-blue-600">
@@ -30,7 +28,6 @@ import { CommonModule } from '@angular/common';
               </div>
             </div>
 
-            <!-- Social links -->
             <div class="flex items-center gap-3">
               <span class="text-xs font-mono font-bold text-slate-400 uppercase tracking-wider hidden sm:inline">
                 Canales:
@@ -67,7 +64,6 @@ import { CommonModule } from '@angular/common';
             </div>
           </div>
 
-          <!-- Contact items grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-6">
             <div class="space-y-1">
               <span class="text-slate-400 block text-[10px] font-mono uppercase tracking-wider">Correo de Contacto:</span>
@@ -99,7 +95,6 @@ import { CommonModule } from '@angular/common';
           </div>
         </div>
 
-        <!-- Derechos de autor -->
         <div class="pt-2 text-center text-xs font-mono text-slate-500">
           <p>
             &copy; 2026 R4SoftIA S.A.S. &mdash; Todos los derechos reservados.
