@@ -1,0 +1,111 @@
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    --font-sans: 'Space Grotesk', 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #f8fafc;
+    color: #0f172a;
+    overflow-x: hidden;
+  }
+}
+
+/* Light background patterns inspired by All Roads & 101 Software */
+.bg-light-dots {
+  background-image: radial-gradient(rgba(15, 23, 42, 0.08) 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+}
+
+.bg-light-grid {
+  background-image: linear-gradient(to right, rgba(226, 232, 240, 0.6) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(226, 232, 240, 0.6) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* High end light glassmorphism */
+.glass-pill-light {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(203, 213, 225, 0.8);
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.08);
+}
+
+.glass-card-light {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 15px 35px -8px rgba(15, 23, 42, 0.07);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-light:hover {
+  border-color: #3b82f6;
+  transform: translateY(-4px);
+  box-shadow: 0 25px 45px -10px rgba(37, 99, 235, 0.15);
+}
+
+/* Stacking / Sticky Card Sheet (The All Roads scroll effect) */
+.stacking-section {
+  position: relative;
+  border-top-left-radius: 3.5rem;
+  border-top-right-radius: 3.5rem;
+  box-shadow: 0 -25px 60px -10px rgba(15, 23, 42, 0.12);
+}
+
+.sticky-stack-card {
+  position: sticky;
+  top: 6.5rem;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+/* Float and pulse animations */
+@keyframes float-subtle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float-subtle 4s ease-in-out infinite;
+}
+
+@keyframes emerge-peek {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+.animate-peek {
+  animation: emerge-peek 5s ease-in-out infinite;
+}
+
+/* Clean light scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+  border: 2px solid #f1f5f9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}

@@ -1,0 +1,28 @@
+<main class="min-h-screen bg-white text-slate-900 selection:bg-blue-600 selection:text-white relative overflow-x-hidden">
+  <!-- Top Floating Pill Navbar -->
+  <app-navbar (openContact)="openModal()"></app-navbar>
+
+  <!-- Hero Section with representative background video, video scene carousel, and scroll guide -->
+  <app-hero (openContact)="openModal()"></app-hero>
+
+  <!-- Floating Bridge Cards (1cero1 inspired) overlapping Hero -->
+  <app-bridge-cards (openContact)="openModal()"></app-bridge-cards>
+
+  <!-- Fluid Scroll Stack: About & Core DNA (All Roads inspired with Emergent Mascot) -->
+  <app-about-stack></app-about-stack>
+
+  <!-- Sectores de Negocio & Metodología de Desarrollo Ágil -->
+  <app-network-showcase></app-network-showcase>
+
+  <!-- Discovery Phase CTA Banner -->
+  <app-cta-banner [whatsappUrl]="whatsappUrl()" (openContact)="openModal()"></app-cta-banner>
+
+  <!-- Enterprise Structured Footer -->
+  <app-footer [whatsappUrl]="whatsappUrl()" [displayPhone]="displayPhone()"></app-footer>
+
+  <!-- Floating WhatsApp Pill Button (All Roads style) -->
+  <app-floating-contact [whatsappUrl]="whatsappUrl()"></app-floating-contact>
+
+  <!-- Interactive Discovery Session Modal -->
+  <app-contact-modal [isOpen]="isModalOpen()" (close)="closeModal()"></app-contact-modal>
+</main>
