@@ -4,7 +4,6 @@ import { NavbarComponent } from './components/navbar/navbar';
 import { HeroComponent } from './components/hero/hero';
 import { BridgeCardsComponent } from './components/bridge-cards/bridge-cards';
 import { AboutStackComponent } from './components/about-stack/about-stack';
-import { NetworkShowcaseComponent } from './components/network-showcase/network-showcase';
 import { CtaBannerComponent } from './components/cta-banner/cta-banner';
 import { FooterComponent } from './components/footer/footer';
 import { FloatingContactComponent } from './components/floating-contact/floating-contact';
@@ -19,7 +18,6 @@ import { ContactModalComponent } from './components/contact-modal/contact-modal'
     HeroComponent,
     BridgeCardsComponent,
     AboutStackComponent,
-    NetworkShowcaseComponent,
     CtaBannerComponent,
     FooterComponent,
     FloatingContactComponent,

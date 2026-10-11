@@ -110,7 +110,6 @@ export class NavbarComponent {
   protected readonly navLinks = [
     { label: 'Inicio', href: '#inicio' },
     { label: 'Nosotros', href: '#nosotros' },
-    { label: 'Sectores', href: '#sectores' },
     { label: 'Contacto', href: '#contacto' }
   ];
 

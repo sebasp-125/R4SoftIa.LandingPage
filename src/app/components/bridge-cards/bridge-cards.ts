@@ -88,21 +88,21 @@ export class BridgeCardsComponent {
       tag: 'Sector Financiero & Corporativo',
       title: 'Portales para Bancos & Entidades',
       description: 'Plataformas transaccionales de alta seguridad, pasarelas de pago, recaudos digitales y portales institucionales de alto tráfico.',
-      targetId: 'sectores'
+      targetId: 'contacto'
     },
     {
       icon: 'custom',
       tag: 'Desarrollo Especializado',
       title: 'Software a la Medida',
       description: 'Sistemas de gestión empresarial (ERP, CRM, inventarios y facturación) construidos desde cero según tus flujos operativos reales.',
-      targetId: 'sectores'
+      targetId: 'contacto'
     },
     {
       icon: 'mobile',
       tag: 'Soluciones Móviles & Cloud',
       title: 'Aplicaciones Móviles Nativas',
       description: 'Aplicaciones de alto rendimiento para iOS y Android integradas a tus sistemas empresariales, sincronización offline y tiempo real.',
-      targetId: 'sectores'
+      targetId: 'contacto'
     }
   ];
 
@@ -110,6 +110,8 @@ export class BridgeCardsComponent {
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      this.openContact.emit();
     }
   }
 
